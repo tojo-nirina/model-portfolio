@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    background: rgba(0, 36, 44, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {text-decoration: none;}
+
+ul li {list-style: none;}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src:  url(../fonts/Space_Grotesk-/SpaceGrotesk-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Darker Grotesque';
+    src:  url(../fonts/Darker_Grotesque/DarkerGrotesque-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src:  url(../fonts/DM_Sans/DMSans-ExtraLight.ttf);
+}
+
+/* **** */
+
+
+.block-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.contenant {position: absolute;}
+
+.contenant .profil {
+    position: relative;
+    top: -170px;
+    z-index: 1;
+}
+
+.contenant  .oval-fond {
+    background: rgba(0, 36, 44, 1);
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    top: -90px;
+    z-index: -1;
+    filter: blur(45px);
+}
+   
+.skill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 810px;
+    margin: auto;
+}
+
+.skill .row-skill {
+    display: flex!important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill .second {
+    position: relative;
+    right: 40px;
+    top: 61px;
+}
+
+.skill .row-skill .logo {
+    background: #FFFF;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.skill .row-skill .js {
+    width: 154px;
+    height: 153px;
+} 
+
+.skill .row-skill .html {
+    width: 81px;
+    height: 80px;
+    right: 150px;
+}
+
+.skill .row-skill .css {
+    width: 102px;
+    height: 101px;
+}
+
+.skill .row-skill .bootstrap {
+    width: 106px;
+    height: 105px;
+    top: 40px;
+    left: 20px;
+}
+
+.block-container .oval {  position: relative;}
+
+.block-container .oval1 {
+    width: 616px;
+    height: 616px;
+    flex-shrink: 0;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(17px);
+}
+
+.block-container .oval2 {
+    width: 209px;
+    height: 209px;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(17px);
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.home {
+    margin-top: 170px;
+    height: 1099px;
+}
+
+.down {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    transform: rotate(90deg);
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.presentation  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -500px;
+    position: relative;
+    z-index: 1;
+}
+
+.presentation .hello {
+    color: #00D1FF;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Space Grotesk';
+    line-height: normal;
+    letter-spacing: -2.4px;
+}
+
+.presentation .name {
+    color: #00D1FF;
+    font-size: 128px;
+    font-weight: 700;
+    font-family: 'Space Grotesk';
+    line-height: 163px; 
+    letter-spacing: -7.68px;
+}
+
+.presentation p {
+    color: rgba(0, 209, 255, 0.50);
+    font-family: 'Darker Grotesque';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin-top: 29px;
+}
+
+.button .btn {
+    padding: 20px 32px;
+    border-radius: 8px;
+}
+
+.button .btn1 { background: #00D1FF;}
+   
+.button .btn1 a {color: #00242C;}
+    
+.button .btn2 { border: 1px solid #00D1FF;} 
+   
+.button a {
+    color: #00D1FF;
+    text-transform: uppercase;
+    font-family: 'Darker Grotesque';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@media screen and (max-width: 992px) {
+    .down {
+        display: none;
+    }
+    .skill {
+        width: 100%;
+    }
+
+    .block-container .oval2 {
+        width: 109px;
+        height: 109px;
+    }
+
+    .skill {
+        display: none
+    }
+
+    .contenant .oval-fond {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 756px)  {
+    .block-container {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .contenant .profil {
+        width: 500px;
+    }
+
+    .home {
+        height: 800px;
+    }
+
+    .presentation {
+        margin-top: -400px;
+    }
+
+    .block-container .oval1 {
+        width: 516px;
+        height: 516px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .presentation .name {
+       font-size: 70px;
+       line-height: 100px;
+    }
+
+    .presentation p {
+        font-size: 20px;
+    }
+
+    .block-right .paragraph {
+        padding: 20px;
+        width: 100%;
+    }
+
+    
+}
+
+@media screen and (max-width: 450px) {
+    .contenant .profil {
+        width: 100%;
+    }
+
+    .home {
+        height: 700px;
+    }
+
+    .contenant .profil {
+        top: -100px;
+    }
+
+    .button {
+        flex-direction: column;
+    }
+
+    .presentation {
+        margin-top: -310px;
+    }
+
+    main {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .block-container .oval1 {
+        width: 380px!important;
+        height: 380px!important;
+    }
+}

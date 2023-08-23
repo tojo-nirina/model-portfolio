@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'DM Sans';
+    src:  url(../fonts/DM_Sans/DMSans_18pt-SemiBold.ttf);
+}
+
+#experience {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 46px;
+}
+
+.row-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 480px;
+    height: 294px;
+    border-radius: 18px;
+    background: rgba(0, 209, 255, 0.50);
+    margin-top: 24px;
+} 
+
+.title-skill {
+    text-align: center;
+    color: #00242C;
+    font-family: DM Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.liste-skill {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.txt-skill .small-title {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.txt-skill p {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 992px) {
+    .experience-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .skill-project {
+        justify-content: center;
+    }
+
+    .row-skills {
+        width: 100%;
+    }
+    
+    .experience-row {
+        width: 100%;
+    }
+
+    .experience-container {
+        width: 90%;
+    }
+}

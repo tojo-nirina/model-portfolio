@@ -1,0 +1,91 @@
+#portfolio {
+    margin: 100px 0;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.row-portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px 30px;
+}
+
+.row-portfolio .row {
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #00D1FF;
+    padding: 19px;
+}
+
+.row-portfolio .row .img-oval {
+    width: 340px;
+    height: 340px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    background: #00242C;
+    padding: 19px;
+}
+
+.row-portfolio .small-title {
+    margin-top: 15px;
+    color: #00242C;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.btn-link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.btn-link .btn {
+    color: #00242C;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    border-radius: 12px;
+    border: 1px solid #00242C;
+    padding: 10px;
+}
+
+.btn-link .btn:hover {
+    background: #00242C;
+    color: #00D1FF;
+}
+.btn-link .btn-secondary {
+    width: 85px;
+}
+
+@media screen and (max-width: 1300px) {
+    .row-portfolio {
+        grid-template-columns: 1fr 1fr;
+        gap: 70px 20px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .row-portfolio {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .row-portfolio .row .img-oval {
+        width: 100%;
+    }
+}

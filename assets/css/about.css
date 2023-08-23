@@ -1,0 +1,164 @@
+#about {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 85%;
+    margin: auto;
+}
+
+.txt {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 5px;
+}
+ 
+.txt p {
+    font-family: 'Darker Grotesque';
+    color: rgba(0, 209, 255, 0.50);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+ }
+
+ .txt .title {
+    color: #00D1FF;
+    font-family: 'DM Sans';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.92px;
+    text-transform: capitalize;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 96px;
+}
+
+.about-container .oval {
+    position: relative;
+}
+
+.about-container .oval1 {
+    width: 456px;
+    height: 438px;
+    transform: rotate(4deg);
+    flex-shrink: 0;
+    border-radius: 27px;
+    background: rgba(255, 255, 255, 0.20);
+}
+
+.about-container .oval2 {
+    position: absolute;
+    top: 0;
+    width: 456px;
+    height: 438px;
+    transform: rotate(-4deg);
+    flex-shrink: 0;
+    border-radius: 27px;
+    background: #FFF;
+}
+  
+.skill-project {
+    display: flex;
+    gap: 24px;
+}
+
+.skill-project .text {
+    height: 60px;
+}
+
+.skill-project .block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 168px;
+    height: 168px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #00D1FF;
+}
+
+.skill-project .small-title {
+    height: 20px;
+    color: #00242C;
+    font-family: 'Space Grotesk';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.96px;
+    text-transform: capitalize;
+}
+
+.skill-project p {
+    color: rgba(0, 36, 44, 0.80);
+    font-family: 'Darker Grotesque';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: capitalize;
+}
+
+.paragraph {
+    margin-top: 25px;
+    width: 435px;
+    line-height: 20px;
+    color: rgba(0, 209, 255, 0.50);
+    font-family: 'Darker Grotesque';
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.block-right button {
+    background: none;
+    border-radius: 8px;
+    border: 1px solid #00D1FF;
+    color: #00D1FF;
+    font-family: 'Space Grotesk';
+    font-size: 16px;
+    margin-top: 16px;
+    padding: 15px 34px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1115px) {
+    
+    #about {max-width: 100%;}
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .about-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about-container .oval1 {
+        width: 356px;
+        height: 338px;
+    }
+
+    .about-container .oval2 {
+        width: 356px;
+        height: 338px;
+    }
+
+    .block-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
